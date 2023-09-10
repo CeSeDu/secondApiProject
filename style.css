@@ -1,68 +1,87 @@
-body{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: teal;
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #96aed0;
 }
-.search__container{
-    display: grid;
-    background-color:rgb(252, 252, 252);
-    width: 500px;
-    height: 610px;
-    justify-content: center;
-    align-items: center;
-    border-radius:1% ;
-    padding: 30px;
-    box-shadow: 5px 5px 100px  rgb(74, 67, 67);
-    margin-top: 20%;
+.search__container {
+  display: grid;
+  max-width: 500px;
+  background-color: white;
+  height: 610px;
+  justify-content: center;
+  border-radius: 1%;
+  padding: 30px;
+  box-shadow: 5px 5px 5px rgb(111, 111, 111);
+  margin-top: 20%;
 }
 
-.input__container{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.input__container {
+  padding: 20px 0px;
 }
-.title{
-text-align: center;
-font-size: 38px;
-letter-spacing: 10px;
-color: black;
+.title {
+  text-align: center;
+  font-size: 38px;
+  padding-bottom: 50px;
+  letter-spacing: 10px;
+  color: black;
 }
-.search__button{
-    padding: 10px;
-    height: 50px;
-    border-radius: 10px;
-    background-color: teal;
-    border: none;
-    width: 90px;
-    cursor: pointer;
-    font-size: 17px;
-    color:rgb(255, 255, 255);
+.search__button {
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #96aed0;
+  border: none;
+  width: 90px;
+  cursor: pointer;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
 }
-.search__input{
-width: 400px;
-height: 50px;
-border-radius: 1px;
-border: none;
-font-size: 15px;
-outline: none;
-padding: 10px;
-border-bottom: 2px solid red;
+.input__box{
+    display: flex;
+    flex-wrap: wrap;
 }
-.flag__img{
-display: block;
-width: 25%;
-min-width: 7.5em;
+.search__input {
+  width: 400px;
+  height: 50px;
+  border-radius: 1px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  padding: 10px;
+  border-bottom: 2px solid #96aed0;
 }
-#result{
+.flag__img {
+  display: block;
+  width: 25%;
+  min-width: 7.5em;
+}
+#result {
   text-align: start;
   padding: 50px;
 }
-.country__common,.country__capital,.country__continents,.country__currencies,.country__languages{
-    font-weight: bolder;
-    margin: 15px;
-    margin-left: 0px;
+.country__common,
+.country__capital,
+.country__continents,
+.country__currencies,
+.country__languages,.country__map {
+  font-weight: bolder;
+  margin: 15px;
+  margin-left: 0px;
 }
-.font__light{
-    font-weight: lighter;
+.font__light {
+  font-weight: lighter;
+}
+
+@media screen and (width:375px) {
+    .title{
+        font-size: 20px;
+    }
+    #result{
+        max-width: 200px;
+        padding:0px;
+    }
+    .search__input{
+        width: 200px;
+    }
 }
